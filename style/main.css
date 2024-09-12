@@ -1,0 +1,260 @@
+.conteudo {
+    margin: 10% 10% 0% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+}
+
+.secao1_div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-left: 0.5rem solid var(--cor-azul);
+    padding-left: 1rem;
+    width: 40rem;
+}
+
+.secao1_h6 {
+    font-size: 1.2rem;
+}
+
+.secao1_h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.secao1_h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+
+.secao2 {
+    display: flex;
+    align-items: center;
+}
+
+
+.secao2_foto {
+    width: 60%;
+    right: 88%;
+    border-radius: 50%;
+    border: 0.5rem inset var(--cor-azul);
+    filter: grayscale(100%);
+    position: absolute;
+    transform: translateY(-5%);
+}
+
+.secao2_foto:hover {
+    filter: none;
+    transition: 0.5s;
+}
+
+.secao2_div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33rem;
+    gap: 1rem;
+    margin-left: auto;
+    position: relative;
+}
+
+.secao2_h1 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-left: auto;
+    border-bottom: 0.25rem solid var(--cor-azul);
+    border-top: 0.25rem solid var(--cor-azul);
+    padding: 0.5rem 0rem;
+}
+
+.secao2_p {
+    background: var(--cor-cinza-escuro);
+    border-right: 0.5rem solid var(--cor-azul);
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.secao3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.secao3_posicao {
+    width: 6rem;
+    margin: auto;
+    text-align: center;
+}
+
+.secao3_div1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: var(--cor-cinza-escuro);
+    width: 25rem;
+    padding: 1.5rem;
+    border-left: 0.5rem solid var(--cor-azul);
+}
+
+.card_cabecario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_titulo::before {
+    content: '';
+    border: 0.2rem solid var(--cor-azul);
+    margin-right: 1rem;
+}
+
+
+.card_icone {
+    width: 2rem;
+    height: 2em;
+}
+
+.card_conteudo {
+    border-top: 1px solid var(--cor-azul);
+    border-bottom: 1px solid var(--cor-azul);
+    padding: 1rem 0rem;
+}
+
+.card_rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_html_css_etc {
+    display: flex;
+    gap: 1rem;
+}
+
+.card_h2 {
+    padding: 0.3rem 0.3rem;
+    border-radius: 5px;
+    color: var(--cor-cinza-escuro);
+    font-weight: 900;
+}
+
+.html {
+    background: var(--cor-laranja);
+}
+
+.css {
+    background: var(--cor-azul);
+}
+
+.js {
+    background: var(--cor-amarela);
+}
+
+.card_botao {
+    text-decoration: none;
+    background: var(--cor-azul);
+    padding: 0.7rem 0.6rem;
+    border-radius: 5px;
+    border: 1px solid var(--cor-azul);
+    color: var(--cor-cinza-claro);
+}
+
+.card_botao:hover {
+    border: 1px solid var(--cor-azul);
+    color: var(--cor-azul);
+    background: none;
+    transition: 0.5s;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .secao1 {
+        transform: scale(0.8);
+        margin-right: auto;
+    }
+
+    .secao2 {
+        transform: scale(0.8);
+        margin-left: auto;
+    }
+
+    .secao3 {
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+   
+    .conteudo {
+        margin: 10% 5% 0% 5%;
+    }
+ 
+    .secao1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .secao1_h6 {
+        font-size: 1rem;
+    }
+
+    .secao1_h1 {
+        font-size: 2rem;
+    }
+
+    .secao1_h2 {
+        font-size: 1.4rem;
+        text-wrap: nowrap;
+    }
+
+    .secao2 {
+    width: auto;           
+    justify-content: center;
+    }
+
+    .secao2_div1 {
+        flex-direction: column-reverse;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .secao2_h1 {
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .secao2_foto {
+        right: 15%;
+        width: 13rem;
+        filter: grayscale(100%);
+        position: absolute;
+        transform: translateY(-85%);
+    }
+
+    .secao2_p {
+        font-size: 0.8rem;
+        border-right: none;
+        border-top: 0.5rem solid var(--cor-azul);
+    }
+
+    .secao3 {
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 300px;
+        font-size: 0.8rem;
+    }
+}

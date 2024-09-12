@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Jersey+10&display=swap');
+@import url(./reset.css); @import url(./header.css); @import url(./main.css); @import url(./footer.css);
+
+:root {
+    --fonte-retro: 'Fira Code';
+    --cor-azul: #176fd4;
+    --cor-cinza-claro: #CCD6F6;
+    --cor-de-fundo: #1f1d1d;
+    --cor-cinza-escuro: #141313fd;
+    --cor-laranja: #ffb300;
+    --cor-amarela: #fbff00;
+}
+
+body {
+    font-size: 1rem;
+    font-family: var(--fonte-retro);
+    background: var(--cor-de-fundo);
+    color: var(--cor-cinza-claro);
+}
+
+.aparecer {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.aparecer.show {
+    opacity: 1;
+}
+

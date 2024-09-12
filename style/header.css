@@ -1,0 +1,142 @@
+.cabecario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor-cinza-escuro);
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+.cabecario_logo {
+    width: 3%;
+}
+
+.cabecario_lista {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.cabecario_lista_itens:hover {
+    color: var(--cor-azul);
+    transition: 0.5s;
+}
+
+.cabecario_lista_itens, .cabecario_lista_itens_botao {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--cor-cinza-claro);
+}
+
+.destaque {
+    font-weight: 600;
+    color: var(--cor-azul);
+}
+
+.cabecario_lista_itens_botao {
+    border: 1px inset var(--cor-azul);
+    color: var(--cor-azul);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.cabecario_lista_itens_botao:hover {
+    background: var(--cor-azul);
+    color: var(--cor-cinza-claro);
+    transition: 0.5s;
+}
+
+.menu-hamburguer {
+    font-size: 30px;
+    cursor: pointer;  
+}
+
+.menu_hamburguer_icone {
+    border: 1px solid var(--cor-azul);
+    padding: 0.2rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 0.1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--cor-cinza-escuro);
+    transition: 0.5s;
+    padding-top: 5rem;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar_lista {
+    border-top: 1px solid var(--cor-azul);
+    border-bottom: 1px solid var(--cor-azul);
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--cor-cinza-claro);
+    display: block;
+    transition: 0.3s;
+    text-wrap: nowrap;
+}
+
+
+.sidebar .fechar-btn {
+    position: absolute;
+    top: 1rem;
+    font-size: 2rem;
+    margin-left: 5rem;
+}
+
+@media (min-width: 1440px) {
+    .menu_hamburguer_icone {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .cabecario_lista, .cabecario_lista_itens, .cabecario_lista_itens_botao{
+       font-size: 0.7rem;
+    }
+
+    .cabecario_lista_itens_botao {
+        padding: 0.4rem 0.6rem;
+    }
+
+
+    .menu_hamburguer_icone {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cabecario_lista {
+        display: none;
+    }
+
+    .cabecario_logo {
+        width: 2.5rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+
+
+    .cabecario_lista {
+        display: none;
+    }
+
+    .cabecario_logo {
+        width: 2.5rem;
+    }
+}
+

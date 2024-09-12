@@ -1,0 +1,47 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: var(--cor-cinza-escuro);
+    margin-top: 20rem;
+}
+
+.rede_social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.rede_social_icone {
+    width: 2rem;
+    filter: grayscale(100%);
+}
+
+.rede_social_icone:hover {
+    filter: none;
+    transition: 0.5s;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    
+    .rodape {
+        padding: 1rem 3rem;
+    }
+    
+    .rodape_h1 {
+        font-size: 0.7rem
+    }
+
+    .rede_social_icone {
+        width: 1.5rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .rodape {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}

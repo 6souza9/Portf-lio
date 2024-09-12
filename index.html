@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/Pasta - Icon.png" type="image/x-icon">
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header class="cabecario aparecer">
+        <img class="cabecario_logo" src="./img/Logo - W.png" alt="Logo W">
+
+        <div class="menu-hamburguer aparecer" onclick="abrirMenu()">
+            <img class="menu_hamburguer_icone" src="./img/Menu.png" alt="Icone Menu">
+        </div>
+        <div class="sidebar">
+            <a href="javascript:void(0)" class="fechar-btn" onclick="fecharMenu()"><p class="teste">&times;</p></a>
+            <a class="sidebar_lista" href="#Home"><strong class="destaque">01. </strong>Home</a></a>
+            <a class="sidebar_lista" href="#Sobre-Mim"><strong class="destaque">02. </strong>Sobre Mim</a>
+            <a class="sidebar_lista" href="#Projeto"><strong class="destaque">03. </strong>Projeto</a>
+        </div>
+        
+        <ul class="cabecario_lista">
+            <li>
+                <a class="cabecario_lista_itens " href="#Home"><strong class="destaque">01. </strong>Home</a>
+            </li>
+            <li>
+                <a class="cabecario_lista_itens" href="#Sobre-Mim"><strong class="destaque">02. </strong>Sobre Mim</a>
+            </li>
+            <li>
+                <a class="cabecario_lista_itens" href="#Projeto"><strong class="destaque">03. </strong>Projeto</a>
+            </li>
+            <li>
+                <a class="cabecario_lista_itens_botao" href="./asset/Curriculo - Wellington.pdf">Currículo</a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="conteudo">
+        <section class="secao1 aparecer" id="Home">
+            <div class="secao1_div1">
+                <h6 class="secao1_h6"><strong class="destaque">Olá, meu nome é</strong></h6>
+                <h1 class="secao1_h1">Wellington Souza</h1>
+                <h2 class="secao1_h2">Engenheiro de Software</h2>
+                <p class="secao1_p">Sou desenvolvedor <strong class="destaque">full stack</strong> em nível
+                    intermediário, atualmente estou em busca de uma oportunidade de estágio para ganhar experiência e
+                    expandir minhas habilidades. Tenho conhecimento intermediário em <strong
+                        class="destaque">desenvolvimento web</strong> , incluindo <strong
+                        class="destaque">HTML</strong>, <strong class="destaque">CSS</strong>, <strong
+                        class="destaque">JavaScript</strong> e algumas bibliotecas e frameworks populares como <strong
+                        class="destaque">React</strong> para o front-end e <strong class="destaque">Node.js</strong>
+                    para o back-end.</p>
+            </div>
+        </section>
+
+
+        <section class="secao2 aparecer" id="Sobre-Mim">
+            
+            <div class="secao2_div1">
+                <img class="secao2_foto" src="./img/Minha Foto.jpg" alt="Foto Wellington">
+                <h1 class="secao2_h1">Sobre Mim</h1>
+                <p class="secao2_p">Tenho interesse em aprender mais sobre programação, e práticas de DevOps para
+                    melhorar a eficiência e a qualidade do desenvolvimento de software. Sou motivado, curioso e gosto de
+                    resolver problemas complexos. Estou comprometido em trabalhar de forma colaborativa e aprender com
+                    profissionais experientes para se tornar um desenvolvedor mais completo.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="secao3 aparecer" id="Projeto">
+            <h1 class="secao2_h1 secao3_posicao">Projetos</h1>
+            <div class="secao3_div1">
+                <div class="card aparecer">
+                    <div class="card_cabecario">
+                        <h1 class="card_titulo">Sistemas de Gestão de Inventario</h1>
+                        <img class="card_icone" src="./img/Pasta - Icon.png" alt="Icone de Pasta">
+                    </div>
+                    <p class="card_conteudo">Um projeto de Sistemas de Gestão de Inventário visa desenvolver uma solução que permite o controle eficiente de estoques, otimização de processos de armazenagem e reposição. Utilizando tecnologias como HTML, CSS e JavaScript, o sistema facilita a gestão de entradas, saídas e atualização de informações de inventário em tempo real, proporcionando maior controle e redução de erros no fluxo de mercadorias.</p>
+                    <div class="card_rodape">
+                        <div class="card_html_css_etc">
+                            <h2 class="card_h2 html">HTML</h2>
+                            <h2 class="card_h2 css">CSS</h2>
+                            <h2 class="card_h2 js">JS</h2>
+                        </div>
+                        <a class="card_botao" href="https://6souza9.github.io/SGI/">Visitar</a>
+                    </div>
+                </div>
+                <div class="card aparecer">
+                    <div class="card_cabecario">
+                        <h1 class="card_titulo">Em Desenvolvimento....</h1>
+                        <img class="card_icone" src="./img/Pasta - Icon.png" alt="Icone de Pasta">
+                    </div>
+                    <p class="card_conteudo">Texto ilustrativo..... Lorem ipsum dolor, Cumque repellendus velit minus laudantium. Illum sed
+                        reprehenderit consequatur? Neque sit perferendis ratione iste quam, molestias, consequatur ullam
+                        vel aspernatur et deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat quibusdam maxime dolorem id aperiam non laborum consequuntur error veritatis labore rerum vitae, accusantium quod qui.</p>
+                    <div class="card_rodape">
+                        <div class="card_html_css_etc">
+                            <h2 class="card_h2 html">HTML</h2>
+                            <h2 class="card_h2 css">CSS</h2>
+                        </div>
+                        <a class="card_botao" href="#" onclick="return false;">.....</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape aparecer">
+        <h1 class="rodape_h1">© Copyright 2024 - Wellington Souza. All rights reserved.</h1>
+        <ul class="rede_social">
+            <li>
+                <a class="rede_social_link" href="https://github.com/6souza9"><img class="rede_social_icone" src="./img/Github.png" alt="Icone Github"></a>
+            </li>
+            <li>
+                <a class="rede_social_link" href="https://www.instagram.com/11wellington11"><img class="rede_social_icone" src="./img/Instagram.png" alt="Icone Instagram"></a>
+            </li>
+            <li>
+                <a class="rede_social_link" href="https://www.linkedin.com/in/wellingtonsouza-whakaza"><img class="rede_social_icone" src="./img/Linkedin.png" alt="Icone Linkedin"></a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
